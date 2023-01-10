@@ -1,7 +1,7 @@
-import {ThemeContext} from "../types";
+import { ThemeContext } from "../types";
 
 export const getTokenColors = (context: ThemeContext) => {
-    const {palette, options} = context;
+    const { palette, options } = context;
 
     return [
         {
@@ -126,8 +126,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "JSON punctuation string",
-            scope:
-                "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
+            scope: "source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string",
             settings: {
                 foreground: palette.teal,
             },
@@ -530,7 +529,10 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "C++ pointer/reference",
-            scope: ["storage.modifier.pointer.cpp", "storage.modifier.reference.cpp"],
+            scope: [
+                "storage.modifier.pointer.cpp",
+                "storage.modifier.reference.cpp",
+            ],
             settings: {
                 foreground: palette.teal,
             },
@@ -615,8 +617,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "punctuation.definition",
-            scope:
-                "punctuation.definition.string.begin,punctuation.definition.string.end",
+            scope: "punctuation.definition.string.begin,punctuation.definition.string.end",
             settings: {
                 foreground: palette.green,
             },
@@ -714,7 +715,10 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "java type",
-            scope: ["storage.type.annotation.java", "storage.type.object.array.java"],
+            scope: [
+                "storage.type.annotation.java",
+                "storage.type.object.array.java",
+            ],
             settings: {
                 foreground: palette.peach,
             },
@@ -764,8 +768,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "java modifier.import",
-            scope:
-                "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
+            scope: "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
             settings: {
                 foreground: palette.peach,
             },
@@ -1351,8 +1354,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "Headings",
-            scope:
-                "markup.heading punctuation.definition.heading, entity.name.section",
+            scope: "markup.heading punctuation.definition.heading, entity.name.section",
             settings: {
                 foreground: palette.blue,
             },
@@ -1475,16 +1477,14 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Underline Link/Image",
-            scope:
-                "markup.underline.link.markdown,markup.underline.link.image.markdown",
+            scope: "markup.underline.link.markdown,markup.underline.link.image.markdown",
             settings: {
                 foreground: palette.red,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Link Title/Description",
-            scope:
-                "string.other.link.title.markdown,string.other.link.description.markdown",
+            scope: "string.other.link.title.markdown,string.other.link.description.markdown",
             settings: {
                 foreground: palette.blue,
             },
@@ -1512,8 +1512,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "Embedded",
-            scope:
-                "punctuation.section.embedded.begin,punctuation.section.embedded.end",
+            scope: "punctuation.section.embedded.begin,punctuation.section.embedded.end",
             settings: {
                 foreground: palette.red,
             },
@@ -1549,16 +1548,14 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "laravel blade tag",
-            scope:
-                "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
+            scope: "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
             settings: {
                 foreground: palette.red,
             },
         },
         {
             name: "laravel blade @",
-            scope:
-                "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
+            scope: "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
             settings: {
                 foreground: palette.red,
             },
@@ -1625,8 +1622,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "php call-function",
-            scope:
-                "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
+            scope: "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
             settings: {
                 foreground: palette.blue,
             },
@@ -1680,8 +1676,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "php logical/bitwise operator",
-            scope:
-                "keyword.operator.logical.php,keyword.operator.bitwise.php,keyword.operator.arithmetic.php",
+            scope: "keyword.operator.logical.php,keyword.operator.bitwise.php,keyword.operator.arithmetic.php",
             settings: {
                 foreground: palette.sky,
             },
@@ -1920,7 +1915,10 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "go operator",
-            scope: ["keyword.operator.arithmetic.go", "keyword.operator.address.go"],
+            scope: [
+                "keyword.operator.arithmetic.go",
+                "keyword.operator.address.go",
+            ],
             settings: {
                 foreground: palette.red,
             },
@@ -2000,7 +1998,10 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "CoffeeScript Function Argument",
-            scope: ["meta.arguments.coffee", "variable.parameter.function.coffee"],
+            scope: [
+                "meta.arguments.coffee",
+                "variable.parameter.function.coffee",
+            ],
             settings: {
                 foreground: palette.teal,
             },

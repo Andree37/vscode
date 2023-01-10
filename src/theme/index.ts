@@ -1,8 +1,13 @@
-import {variants} from "@catppuccin/palette";
-import {CatppuccinFlavour, CatppuccinPalette, ThemeContext, ThemeOptions,} from "../types";
-import {getTokenColors} from "./tokenColors";
-import {getUiColors} from "./uiColors";
-import {capitalize} from "./utils";
+import { variants } from "@tbh-theme/palette";
+import {
+    CatppuccinFlavour,
+    CatppuccinPalette,
+    ThemeContext,
+    ThemeOptions,
+} from "../types";
+import { getTokenColors } from "./tokenColors";
+import { getUiColors } from "./uiColors";
+import { capitalize } from "./utils";
 
 export const defaultOptions: ThemeOptions = {
     accent: "mauve",
@@ -26,7 +31,7 @@ export const compileTheme = (
                 name: flavour,
             };
         })
-        .reduce((acc, curr) => ({...acc, ...curr}), {});
+        .reduce((acc, curr) => ({ ...acc, ...curr }), {});
 
     const palette: CatppuccinPalette = {
         ...(ctpPalette as CatppuccinPalette),
@@ -42,7 +47,7 @@ export const compileTheme = (
 
     const flavourName = `Catppuccin ${capitalize(flavour)}`;
 
-    const theme = {
+    return {
         name: flavourName,
         type: context.isLatte ? "light" : "dark",
         semanticHighlighting: true,
@@ -60,6 +65,4 @@ export const compileTheme = (
         tokenColors: getTokenColors(context),
         colors: getUiColors(context),
     };
-
-    return theme;
 };

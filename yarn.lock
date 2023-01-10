@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@catppuccin/palette@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-0.1.5.tgz#79350555c86707913942bf4feaac9fe9bc0c1d7c"
-  integrity sha512-IQLsZwXDMpLc5CFGjIMa/gFnnFL/QLB280F11B51JweZHerZ/FgPXdIR4eQqn1CgrqI3wGfgnj1LVPx12DV/Uw==
-
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
@@ -196,6 +191,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@tbh-theme/palette@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@tbh-theme/palette/-/palette-0.0.10.tgz#cef3b64553bcb5f818b309f6b8f263b6cfef2a8f"
+  integrity sha512-LdCRySr7YRHkfm6EtBX49zN53bwYxbiZcp1XCDFBXKqfRkXTMKfPlLI4zYM+Mb6PMuUVq0CK0Qdcws2qXUaYmw==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"

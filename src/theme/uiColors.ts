@@ -1,9 +1,13 @@
-import {CatppuccinBracketMode, CatppuccinWorkbenchMode, ThemeContext,} from "../types";
-import {opacity, shade, transparent} from "./utils";
+import {
+    CatppuccinBracketMode,
+    CatppuccinWorkbenchMode,
+    ThemeContext,
+} from "../types";
+import { opacity, shade, transparent } from "./utils";
 import extensions from "./extensions";
 
 const getCustomizedColors = (context: ThemeContext) => {
-    const {palette, options, isLatte} = context;
+    const { palette, options, isLatte } = context;
 
     // invert the shade if current theme is latte
     const L = isLatte ? -1 : 1;
@@ -15,15 +19,31 @@ const getCustomizedColors = (context: ThemeContext) => {
             "editorBracketHighlight.foreground4": palette.green,
             "editorBracketHighlight.foreground5": palette.sapphire,
             "editorBracketHighlight.foreground6": palette.mauve,
-            "editorBracketHighlight.unexpectedBracket.foreground": palette.maroon,
+            "editorBracketHighlight.unexpectedBracket.foreground":
+                palette.maroon,
         },
         dimmed: {
             "editorBracketHighlight.foreground1": shade(palette.red, -0.6 * L),
-            "editorBracketHighlight.foreground2": shade(palette.peach, -0.6 * L),
-            "editorBracketHighlight.foreground3": shade(palette.yellow, -0.6 * L),
-            "editorBracketHighlight.foreground4": shade(palette.green, -0.6 * L),
-            "editorBracketHighlight.foreground5": shade(palette.sapphire, -0.6 * L),
-            "editorBracketHighlight.foreground6": shade(palette.mauve, -0.6 * L),
+            "editorBracketHighlight.foreground2": shade(
+                palette.peach,
+                -0.6 * L
+            ),
+            "editorBracketHighlight.foreground3": shade(
+                palette.yellow,
+                -0.6 * L
+            ),
+            "editorBracketHighlight.foreground4": shade(
+                palette.green,
+                -0.6 * L
+            ),
+            "editorBracketHighlight.foreground5": shade(
+                palette.sapphire,
+                -0.6 * L
+            ),
+            "editorBracketHighlight.foreground6": shade(
+                palette.mauve,
+                -0.6 * L
+            ),
             "editorBracketHighlight.unexpectedBracket.foreground": shade(
                 palette.maroon,
                 -0.6 * L
@@ -36,7 +56,8 @@ const getCustomizedColors = (context: ThemeContext) => {
             "editorBracketHighlight.foreground4": palette.overlay1,
             "editorBracketHighlight.foreground5": palette.overlay0,
             "editorBracketHighlight.foreground6": palette.surface2,
-            "editorBracketHighlight.unexpectedbracket.foreground": palette.maroon,
+            "editorBracketHighlight.unexpectedbracket.foreground":
+                palette.maroon,
         },
         neovim: {
             "editorBracketHighlight.foreground1": palette.red,
@@ -45,7 +66,8 @@ const getCustomizedColors = (context: ThemeContext) => {
             "editorBracketHighlight.foreground4": palette.blue,
             "editorBracketHighlight.foreground5": palette.pink,
             "editorBracketHighlight.foreground6": palette.flamingo,
-            "editorBracketHighlight.unexpectedBracket.foreground": palette.maroon,
+            "editorBracketHighlight.unexpectedBracket.foreground":
+                palette.maroon,
         },
     };
 
@@ -78,7 +100,7 @@ const getCustomizedColors = (context: ThemeContext) => {
 };
 
 export const getUiColors = (context: ThemeContext) => {
-    const {palette, options, isLatte} = context;
+    const { palette, options, isLatte } = context;
 
     const accent = palette[options.accent];
     const dropBackground = opacity(palette.surface2, 0.6);
@@ -119,7 +141,7 @@ export const getUiColors = (context: ThemeContext) => {
                     [k]: v,
                 };
             })
-            .reduce((prev, cur) => ({...prev, ...cur}), {}),
+            .reduce((prev, cur) => ({ ...prev, ...cur }), {}),
     };
 
     // find the definitions here:
@@ -459,7 +481,10 @@ export const getUiColors = (context: ThemeContext) => {
         "statusBarItem.hoverBackground": opacity(palette.surface2, 0.2),
         "statusBarItem.prominentForeground": accent,
         "statusBarItem.prominentBackground": transparent,
-        "statusBarItem.prominentHoverBackground": opacity(palette.surface2, 0.2),
+        "statusBarItem.prominentHoverBackground": opacity(
+            palette.surface2,
+            0.2
+        ),
         "statusBarItem.errorForeground": palette.red,
         "statusBarItem.errorBackground": transparent,
         "statusBarItem.warningForeground": palette.peach,

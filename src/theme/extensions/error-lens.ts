@@ -1,8 +1,8 @@
-import {ThemeContext} from "../../types";
-import {opacity} from "../utils";
+import { ThemeContext } from "../../types";
+import { opacity } from "../utils";
 
 export default function colors(context: ThemeContext) {
-    const {palette} = context;
+    const { palette } = context;
 
     return {
         "errorLens.errorBackground": opacity(palette.red, 0.15),

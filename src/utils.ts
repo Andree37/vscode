@@ -1,7 +1,7 @@
-import {variants} from "@catppuccin/palette";
+import { variants } from "@tbh-theme/palette";
 import * as fs from "fs";
-import {compileTheme, defaultOptions} from "./theme";
-import {commands, window, workspace} from "vscode";
+import { compileTheme, defaultOptions } from "./theme";
+import { commands, window, workspace } from "vscode";
 import {
     CatppuccinAccent,
     CatppuccinBracketMode,
@@ -12,7 +12,7 @@ import {
     ThemeOptions,
     ThemePaths,
 } from "./types";
-import {join} from "path";
+import { join } from "path";
 
 // the reason why an update has been triggered, and a reload is needed
 export enum UpdateTrigger {
@@ -37,7 +37,9 @@ class Utils {
     isDefaultConfig(): boolean {
         console.log("Checking if catppuccin is using default config.");
         const state = this.getConfiguration() === defaultOptions;
-        console.log(`Catppuccin is using ${state ? "default" : "custom"} config.`);
+        console.log(
+            `Catppuccin is using ${state ? "default" : "custom"} config.`
+        );
         return state;
     }
 

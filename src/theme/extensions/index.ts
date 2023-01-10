@@ -1,4 +1,4 @@
-import {ThemeContext} from "../../types";
+import { ThemeContext } from "../../types";
 import errorLens from "./error-lens";
 
 export default function (context: ThemeContext) {

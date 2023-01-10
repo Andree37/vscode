@@ -1,6 +1,6 @@
-import {ConfigurationChangeEvent, workspace} from "vscode";
-import {getThemePaths} from "./helpers";
-import utils, {UpdateTrigger} from "./utils";
+import { ConfigurationChangeEvent, workspace } from "vscode";
+import { getThemePaths } from "./helpers";
+import utils, { UpdateTrigger } from "./utils";
 
 export const activate = () => {
     const paths = getThemePaths();
@@ -26,5 +26,4 @@ export const activate = () => {
     });
 };
 
-export const deactivate = () => {
-};
+export const deactivate = () => {};

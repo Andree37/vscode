@@ -152,7 +152,7 @@
         "isPreReleaseVersion": false
     },
     "devDependencies": {
-        "@catppuccin/palette": "^0.1.5",
+        "@tbh-theme/palette": "^0.0.10",
         "@types/node": "^16.0.0",
         "@types/vscode": "^1.70.0",
         "@typescript-eslint/eslint-plugin": "^5.34.0",

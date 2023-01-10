@@ -1,6 +1,6 @@
-import {compileTheme, defaultOptions} from "../theme";
-import {CatppuccinFlavour} from "../types";
-import {getThemePaths} from "../helpers";
+import { compileTheme, defaultOptions } from "../theme";
+import { CatppuccinFlavour } from "../types";
+import { getThemePaths } from "../helpers";
 import * as fs from "fs";
 import path = require("path");
 

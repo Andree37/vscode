@@ -1,5 +1,5 @@
-import {join} from "path";
-import {ThemePaths} from "./types";
+import { join } from "path";
+import { ThemePaths } from "./types";
 
 export const getThemePaths = (): ThemePaths => {
     const themes = ["latte", "frappe", "macchiato", "mocha"];
@@ -10,7 +10,8 @@ export const getThemePaths = (): ThemePaths => {
         mocha: "",
     };
     themes.map(
-        (theme) => (paths[theme] = join(__dirname, "..", "themes", `${theme}.json`))
+        (theme) =>
+            (paths[theme] = join(__dirname, "..", "themes", `${theme}.json`))
     );
     return paths;
 };
