@@ -4,6 +4,10 @@
     "publisher": "Catppuccin",
     "description": "🦌 Soothing pastel theme for VSCode",
     "version": "2.5.0",
+    "engines": {
+        "vscode": "^1.70.0",
+        "node": ">=16.0.0 <20.0.0"
+    },
     "categories": [
         "Themes"
     ],
