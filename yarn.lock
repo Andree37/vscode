@@ -192,10 +192,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@tbh-theme/palette@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@tbh-theme/palette/-/palette-0.0.12.tgz#8a2a67fde1d193af9ccc30ac5e876832b660d31f"
-  integrity sha512-Xo4uJhZJFwuP4TBEP6m+VcRF84+Gs+pidiyH8Aa2NRLb6NuizygqWUh3F9sbqrpPUtXUJfcOV3cFsFJGIrQhIw==
+"@tbh-theme/palette@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@tbh-theme/palette/-/palette-0.0.13.tgz#18b6749c1bece74e44f0ef90ce7cf6efc9c8c823"
+  integrity sha512-sge3OOdedLIoSMLczx6EK5mVyKRG50QsY0FzZFnmvZhf9I12vs8cdOuWBy8mV9XeFxMf5OKjhNKGCN7Tkt6Edw==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
