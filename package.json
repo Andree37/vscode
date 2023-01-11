@@ -3,7 +3,7 @@
     "displayName": "TBH-Theme for VSCode",
     "publisher": "tbh-theme",
     "description": "Theme name to be decided for VSCode",
-    "version": "0.01",
+    "version": "0.0.1",
     "engines": {
         "vscode": "^1.70.0",
         "node": ">=16.0.0 <20.0.0"
