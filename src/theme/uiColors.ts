@@ -1,6 +1,6 @@
 import {
-    CatppuccinBracketMode,
-    CatppuccinWorkbenchMode,
+    TbhThemeBracketMode,
+    TbhThemeWorkbenchMode,
     ThemeContext,
 } from "../types";
 import { opacity, shade, transparent } from "./utils";
@@ -11,7 +11,7 @@ const getCustomizedColors = (context: ThemeContext) => {
 
     // invert the shade if current theme is latte
     const L = isLatte ? -1 : 1;
-    const bracketsMap: Record<CatppuccinBracketMode, Record<string, string>> = {
+    const bracketsMap: Record<TbhThemeBracketMode, Record<string, string>> = {
         rainbow: {
             "editorBracketHighlight.foreground1": palette.red,
             "editorBracketHighlight.foreground2": palette.peach,
@@ -72,7 +72,7 @@ const getCustomizedColors = (context: ThemeContext) => {
     };
 
     const workbenchMap: Record<
-        CatppuccinWorkbenchMode,
+        TbhThemeWorkbenchMode,
         Record<string, string>
     > = {
         default: {},

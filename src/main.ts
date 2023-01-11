@@ -16,7 +16,7 @@ export const activate = () => {
 
     // regenerate the theme files when the config changes
     workspace.onDidChangeConfiguration((event: ConfigurationChangeEvent) => {
-        if (event.affectsConfiguration("catppuccin")) {
+        if (event.affectsConfiguration("tbh-theme")) {
             utils.updateThemes(
                 utils.getConfiguration(),
                 paths,

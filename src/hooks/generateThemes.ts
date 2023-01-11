@@ -1,5 +1,5 @@
 import { compileTheme, defaultOptions } from "../theme";
-import { CatppuccinFlavour } from "../types";
+import { TbhThemeFlavour } from "../types";
 import { getThemePaths } from "../helpers";
 import * as fs from "fs";
 import path = require("path");
@@ -7,10 +7,10 @@ import path = require("path");
 const paths = getThemePaths();
 
 const flavours = [
-    "latte" as CatppuccinFlavour,
-    "frappe" as CatppuccinFlavour,
-    "macchiato" as CatppuccinFlavour,
-    "mocha" as CatppuccinFlavour,
+    "latte" as TbhThemeFlavour,
+    "frappe" as TbhThemeFlavour,
+    "macchiato" as TbhThemeFlavour,
+    "mocha" as TbhThemeFlavour,
 ];
 
 flavours.map((flavour) => {

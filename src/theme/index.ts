@@ -1,7 +1,7 @@
 import { variants } from "@tbh-theme/palette";
 import {
-    CatppuccinFlavour,
-    CatppuccinPalette,
+    TbhThemeFlavour,
+    TbhThemePalette,
     ThemeContext,
     ThemeOptions,
 } from "../types";
@@ -21,7 +21,7 @@ export const defaultOptions: ThemeOptions = {
 };
 
 export const compileTheme = (
-    flavour: CatppuccinFlavour = "mocha",
+    flavour: TbhThemeFlavour = "mocha",
     options: ThemeOptions = defaultOptions
 ) => {
     const ctpPalette = Object.entries(variants[flavour])
@@ -33,8 +33,8 @@ export const compileTheme = (
         })
         .reduce((acc, curr) => ({ ...acc, ...curr }), {});
 
-    const palette: CatppuccinPalette = {
-        ...(ctpPalette as CatppuccinPalette),
+    const palette: TbhThemePalette = {
+        ...(ctpPalette as TbhThemePalette),
         ...options.colorOverrides?.all,
         ...options.colorOverrides?.[flavour],
     };
@@ -45,7 +45,7 @@ export const compileTheme = (
         isLatte: flavour === "latte",
     };
 
-    const flavourName = `Catppuccin ${capitalize(flavour)}`;
+    const flavourName = `TbhTheme ${capitalize(flavour)}`;
 
     return {
         name: flavourName,

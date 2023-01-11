@@ -3,12 +3,12 @@ import * as fs from "fs";
 import { compileTheme, defaultOptions } from "./theme";
 import { commands, window, workspace } from "vscode";
 import {
-    CatppuccinAccent,
-    CatppuccinBracketMode,
-    CatppuccinFlavour,
-    CatppuccinWorkbenchMode,
     ColorOverrides,
     CustomUIColors,
+    TbhThemeAccent,
+    TbhThemeBracketMode,
+    TbhThemeFlavour,
+    TbhThemeWorkbenchMode,
     ThemeOptions,
     ThemePaths,
 } from "./types";
@@ -22,37 +22,37 @@ export enum UpdateTrigger {
 
 class Utils {
     isFreshInstall(): boolean {
-        console.log("Checking if catppuccin is installed for the first time.");
+        console.log("Checking if tbh-theme is installed for the first time.");
         const flagPath = join(__dirname, "..", "themes", ".flag");
         if (fs.existsSync(flagPath)) {
-            console.log("Catppuccin is installed for the first time!");
+            console.log("tbh-theme is installed for the first time!");
             return false;
         } else {
-            console.log("Catppuccin has been installed before.");
+            console.log("tbh-theme has been installed before.");
             fs.writeFileSync(flagPath, "");
             return true;
         }
     }
 
     isDefaultConfig(): boolean {
-        console.log("Checking if catppuccin is using default config.");
+        console.log("Checking if tbh-theme is using default config.");
         const state = this.getConfiguration() === defaultOptions;
         console.log(
-            `Catppuccin is using ${state ? "default" : "custom"} config.`
+            `tbh-theme is using ${state ? "default" : "custom"} config.`
         );
         return state;
     }
 
     getConfiguration = (): ThemeOptions => {
-        const conf = workspace.getConfiguration("catppuccin");
+        const conf = workspace.getConfiguration("tbh-theme");
         return {
-            accent: conf.get<CatppuccinAccent>("accentColor"),
+            accent: conf.get<TbhThemeAccent>("accentColor"),
             boldKeywords: conf.get<boolean>("boldKeywords"),
             italicKeywords: conf.get<boolean>("italicKeywords"),
             italicComments: conf.get<boolean>("italicComments"),
             colorOverrides: conf.get<ColorOverrides>("colorOverrides"),
-            workbenchMode: conf.get<CatppuccinWorkbenchMode>("workbenchMode"),
-            bracketMode: conf.get<CatppuccinBracketMode>("bracketMode"),
+            workbenchMode: conf.get<TbhThemeWorkbenchMode>("workbenchMode"),
+            bracketMode: conf.get<TbhThemeBracketMode>("bracketMode"),
             customUIColors: conf.get<CustomUIColors>("customUIColors"),
         };
     };
@@ -62,7 +62,7 @@ class Utils {
         paths: ThemePaths,
         trigger: UpdateTrigger
     ) => {
-        const flavours = Object.keys(variants) as CatppuccinFlavour[];
+        const flavours = Object.keys(variants) as TbhThemeFlavour[];
 
         const promises = flavours.map(async (flavour): Promise<void> => {
             const theme = compileTheme(flavour, options);
@@ -75,7 +75,7 @@ class Utils {
     };
 
     private promptToReload(trigger: UpdateTrigger) {
-        const msg = `Catppuccin: ${trigger} - Reload required.`;
+        const msg = `TbhTheme: ${trigger} - Reload required.`;
         const action = "Reload window";
         window.showInformationMessage(msg, action).then((selectedAction) => {
             if (selectedAction === action) {

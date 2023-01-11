@@ -1,5 +1,5 @@
-export type CatppuccinFlavour = "latte" | "frappe" | "macchiato" | "mocha";
-export type CatppuccinAccent =
+export type TbhThemeFlavour = "latte" | "frappe" | "macchiato" | "mocha";
+export type TbhThemeAccent =
     | "rosewater"
     | "flamingo"
     | "pink"
@@ -14,15 +14,15 @@ export type CatppuccinAccent =
     | "sapphire"
     | "blue"
     | "lavender";
-export type CatppuccinWorkbenchMode = "default" | "flat";
-export type CatppuccinBracketMode =
+export type TbhThemeWorkbenchMode = "default" | "flat";
+export type TbhThemeBracketMode =
     | "rainbow"
     | "dimmed"
     | "monochromatic"
     | "neovim";
 
-export interface CatppuccinPalette {
-    name: CatppuccinFlavour;
+export interface TbhThemePalette {
+    name: TbhThemeFlavour;
     rosewater: string;
     flamingo: string;
     pink: string;
@@ -52,11 +52,11 @@ export interface CatppuccinPalette {
 }
 
 export type ColorOverrides = {
-    all?: Partial<CatppuccinPalette>;
-    latte?: Partial<CatppuccinPalette>;
-    frappe?: Partial<CatppuccinPalette>;
-    macchiato?: Partial<CatppuccinPalette>;
-    mocha?: Partial<CatppuccinPalette>;
+    all?: Partial<TbhThemePalette>;
+    latte?: Partial<TbhThemePalette>;
+    frappe?: Partial<TbhThemePalette>;
+    macchiato?: Partial<TbhThemePalette>;
+    mocha?: Partial<TbhThemePalette>;
 };
 
 export type CustomUIColors = {
@@ -68,13 +68,13 @@ export type CustomUIColors = {
 };
 
 export type ThemeOptions = {
-    accent: CatppuccinAccent;
+    accent: TbhThemeAccent;
     italicComments: boolean;
     italicKeywords: boolean;
     boldKeywords: boolean;
     colorOverrides: ColorOverrides;
-    workbenchMode: CatppuccinWorkbenchMode;
-    bracketMode: CatppuccinBracketMode;
+    workbenchMode: TbhThemeWorkbenchMode;
+    bracketMode: TbhThemeBracketMode;
     customUIColors: CustomUIColors;
 };
 
@@ -86,7 +86,7 @@ export type ThemePaths = {
 };
 
 export type ThemeContext = {
-    palette: CatppuccinPalette;
+    palette: TbhThemePalette;
     options: ThemeOptions;
     isLatte: boolean;
 };
