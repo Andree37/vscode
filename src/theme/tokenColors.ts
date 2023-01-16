@@ -1,7 +1,7 @@
 import { ThemeContext } from "../types";
 
-export const getTokenColors = (context: ThemeContext) => {
-    const { palette, options } = context;
+export const getTokenColors = (conmagnolia: ThemeContext) => {
+    const { palette, options } = conmagnolia;
 
     return [
         {
@@ -15,7 +15,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All function",
             scope: ["entity.name.function", "support.function"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -34,7 +34,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All numeric",
             scope: ["constant.numeric.decimal", "constant.numeric.integer"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
                 fontStyle: options.boldKeywords ? "bold" : "",
             },
         },
@@ -42,7 +42,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All types",
             scope: "entity.name.type",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -83,7 +83,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All namespace",
             scope: "entity.name.namespace",
             settings: {
-                foreground: palette.rosewater,
+                foreground: palette.brink_pink,
             },
         },
         {
@@ -106,7 +106,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All built-in constants",
             scope: "constant.language",
             settings: {
-                foreground: palette.lavender,
+                foreground: palette.pink,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -114,7 +114,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All constants",
             scope: "constant.other",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -140,21 +140,21 @@ export const getTokenColors = (context: ThemeContext) => {
                 "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
             ],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "JSON property name",
             scope: "support.type.property-name.json.comments",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "JSON constants",
             scope: "constant.language.json.comments",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -232,14 +232,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "haskell storage type",
             scope: "storage.type.haskell",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "support.variable.magic.python",
             scope: "support.variable.magic.python",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -251,14 +251,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "punctuation.parenthesis.end.python",
             ],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "variable.parameter.function.language.special.self.python",
             scope: "variable.parameter.function.language.special.self.python",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
 
@@ -266,28 +266,28 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Rust modifier",
             scope: "storage.modifier.lifetime.rust",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "Rust types",
             scope: "entity.name.type.rust",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Rust functions std",
             scope: "support.function.std.rust",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "Rust functions",
             scope: "entity.name.function.rust",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -295,7 +295,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Rust function keyword",
             scope: "keyword.other.fn.rust",
             settings: {
-                foreground: palette.maroon,
+                foreground: palette.bittersweet,
             },
         },
         {
@@ -324,7 +324,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Rust namespace",
             scope: "entity.name.namespace.rust",
             settings: {
-                foreground: palette.rosewater,
+                foreground: palette.brink_pink,
             },
         },
         {
@@ -370,28 +370,28 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Rust math logic",
             scope: "constant.numeric.decimal.rust",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Rust constants",
             scope: "support.constant.core.rust",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Rust entity name",
             scope: "entity.name.lifetime.rust",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Rust variable",
             scope: ["variable.language.rust", "variable.other.rust"],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -399,7 +399,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Rust misc operators",
             scope: "keyword.operator.misc.rust",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -422,7 +422,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Lua numeric",
             scope: "constant.numeric.integer.lua",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
                 fontStyle: options.boldKeywords ? "bold" : "",
             },
         },
@@ -430,7 +430,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Lua other vars",
             scope: "variable.other.lua",
             settings: {
-                foreground: palette.lavender,
+                foreground: palette.pink,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -457,7 +457,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "C++ Variables",
             scope: "variable.other.local.cpp",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -487,7 +487,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "entity.name.function.definition.special.member.destructor",
             ],
             settings: {
-                foreground: palette.lavender,
+                foreground: palette.pink,
             },
         },
         {
@@ -523,7 +523,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "entity.name.scope-resolution.cpp",
             ],
             settings: {
-                foreground: palette.rosewater,
+                foreground: palette.brink_pink,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -573,14 +573,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "punctuation.section.parameters.end.bracket.round.c",
             ],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "C++ storage type modifier",
             scope: "storage.type.built-in.primitive.cpp",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -591,7 +591,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "entity.name.scope-resolution.function.definition",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -612,28 +612,28 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "regexp operator.quantifier",
             scope: "keyword.operator.quantifier.regexp",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "punctuation.definition",
             scope: "punctuation.definition.string.begin,punctuation.definition.string.end",
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "Comment Markup Link",
             scope: "comment markup.link",
             settings: {
-                foreground: palette.overlay0,
+                foreground: palette.thistle,
             },
         },
         {
             name: "markup diff",
             scope: "markup.changed.diff",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -645,14 +645,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "punctuation.definition.to-file.diff",
             ],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "inserted.diff",
             scope: "markup.inserted.diff",
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
@@ -674,7 +674,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "markup.fenced_code.block",
             ],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
                 fontStyle: options.italicComments ? "italic" : "",
             },
         },
@@ -682,35 +682,35 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js/ts punctuation separator key-value",
             scope: "punctuation.separator.key-value",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "js/ts import keyword",
             scope: "keyword.operator.expression.import",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "math js/ts",
             scope: "support.constant.math",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "math property js/ts",
             scope: "support.constant.property.math",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "js/ts variable.other.constant",
             scope: "variable.other.constant",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -720,7 +720,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "storage.type.object.array.java",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -756,21 +756,21 @@ export const getTokenColors = (context: ThemeContext) => {
                 "meta.method.body.java",
             ],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "java modifier.import",
             scope: "meta.method.java",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "java modifier.import",
             scope: "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -784,7 +784,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "java variable.name",
             scope: "meta.definition.variable.name.java",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -816,7 +816,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "support.constant.property-value.css",
             ],
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -837,21 +837,21 @@ export const getTokenColors = (context: ThemeContext) => {
                 "support.constant.color.w3c-standard-color-name.scss",
             ],
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "css comma",
             scope: "punctuation.separator.list.comma.css",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "css attribute-name.id",
             scope: "support.constant.color.w3c-standard-color-name.css",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -869,14 +869,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "support.module.node",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "entity.name.type.module",
             scope: "entity.name.type.module",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -889,14 +889,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "support.variable.object.node",
             ],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "js/ts json",
             scope: "support.constant.json",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -923,14 +923,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js/ts support.variable.property.process",
             scope: "support.variable.property.process",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "js console function",
             scope: "entity.name.function,support.function.console",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -989,7 +989,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Punctuation",
             scope: "punctuation.separator.delimiter",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1033,14 +1033,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "punctuation.definition.list.end.python",
             ],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "python function-call.generic",
             scope: "meta.function-call.generic.python",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -1048,7 +1048,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "python placeholder reset to normal string",
             scope: "constant.character.format.placeholder.other.python",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -1070,28 +1070,28 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Namespaces",
             scope: "entity.name.namespace",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Language variables",
             scope: "variable.language",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Java Variables",
             scope: "token.variable.parameter.java",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "Java Imports",
             scope: "import.storage.java",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1105,7 +1105,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Packages",
             scope: "token.package",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1117,7 +1117,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "variable.function",
             ],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -1125,21 +1125,21 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Classes",
             scope: "entity.name.type.namespace",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Classes",
             scope: "support.class, entity.name.type.class",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Class name",
             scope: "entity.name.class.identifier.namespace.type",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1150,7 +1150,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "variable.other.class.ts",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1164,7 +1164,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Type Name",
             scope: "entity.name.type",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1178,14 +1178,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Control Elements",
             scope: "control.elements, keyword.operator.less",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Methods",
             scope: "keyword.other.special-method",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1221,7 +1221,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Java Storage",
             scope: "token.storage.type.java",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1235,42 +1235,42 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Support type",
             scope: "support.type.property-name",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "Support type",
             scope: "support.constant.property-value",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "Support type",
             scope: "support.constant.font-name",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Meta tag",
             scope: "meta.tag",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "Strings",
             scope: "string",
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "Inherited Class",
             scope: "entity.other.inherited-class",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1284,21 +1284,21 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Integers",
             scope: "constant.numeric",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Constants",
             scope: "constant",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Constants",
             scope: "punctuation.definition.constant",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -1312,7 +1312,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Attributes",
             scope: "entity.other.attribute-name",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1320,7 +1320,7 @@ export const getTokenColors = (context: ThemeContext) => {
             scope: "entity.other.attribute-name.id",
             settings: {
                 fontStyle: "",
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1328,7 +1328,7 @@ export const getTokenColors = (context: ThemeContext) => {
             scope: "entity.other.attribute-name.class.css",
             settings: {
                 fontStyle: "",
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -1356,7 +1356,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Headings",
             scope: "markup.heading punctuation.definition.heading, entity.name.section",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1370,14 +1370,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Bold",
             scope: "markup.bold,todo.bold",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Bold",
             scope: "punctuation.definition.bold",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1416,31 +1416,31 @@ export const getTokenColors = (context: ThemeContext) => {
             },
         },
         {
-            name: "[VSCODE-CUSTOM] Markdown heading setext",
-            scope: "markup.heading.setext",
+            name: "[VSCODE-CUSTOM] Markdown heading semagnolia",
+            scope: "markup.heading.semagnolia",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Punctuation Definition Bold",
             scope: "punctuation.definition.bold.markdown",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Inline Raw",
             scope: "markup.inline.raw.markdown",
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Inline Raw",
             scope: "markup.inline.raw.string.markdown",
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
@@ -1486,7 +1486,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "[VSCODE-CUSTOM] Markdown Link Title/Description",
             scope: "string.other.link.title.markdown,string.other.link.description.markdown",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1521,7 +1521,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "illegal, deprecated",
             scope: "invalid.illegal, invalid.deprecated",
             settings: {
-                foreground: palette.overlay0,
+                foreground: palette.thistle,
                 fontStyle: "strikethrough",
             },
         },
@@ -1529,7 +1529,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "illegal",
             scope: "invalid.illegal.bad-ampersand.html",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1548,14 +1548,14 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "laravel blade tag",
-            scope: "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
+            scope: "magnolia.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
             settings: {
                 foreground: palette.red,
             },
         },
         {
             name: "laravel blade @",
-            scope: "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
+            scope: "magnolia.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
             settings: {
                 foreground: palette.red,
             },
@@ -1570,7 +1570,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "meta.interface.php",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1591,14 +1591,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "style double quoted array index normal begin",
             scope: "punctuation.section.array.begin.php",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "style double quoted array index normal end",
             scope: "punctuation.section.array.end.php",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1617,14 +1617,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "keyword.other.array.phpdoc.php",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "php call-function",
             scope: "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1652,7 +1652,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "punctuation.definition.section.switch-block.end.bracket.curly.php",
             ],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1664,14 +1664,14 @@ export const getTokenColors = (context: ThemeContext) => {
                 "support.constant.parser-token.php",
             ],
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "php goto",
             scope: "entity.name.goto-label.php,support.other.php",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1706,7 +1706,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "python function decorator @",
             scope: "meta.function.decorator.python",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1723,21 +1723,21 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "parameter function js/ts",
             scope: "function.parameter",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "brace function",
             scope: "function.brace",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "parameter function ruby cs",
             scope: ["function.parameter.ruby", "function.parameter.cs"],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1758,14 +1758,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "rgb value",
             scope: "inline-color-decoration rgb-value",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "rgb value less",
             scope: "less rgb-value",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -1784,40 +1784,40 @@ export const getTokenColors = (context: ThemeContext) => {
                 "support.type.builtin.tsx",
             ],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "block scope",
             scope: "block.scope.end,block.scope.begin",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "cs storage type",
             scope: "storage.type.cs",
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "cs local variable",
             scope: "entity.name.variable.local.cs",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             scope: "token.info-token",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             scope: "token.warn-token",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -1847,7 +1847,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Reset JavaScript string interpolation expression",
             scope: ["meta.template.expression"],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -1861,14 +1861,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js Flowtype",
             scope: ["support.type.type.flowtype"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "js Flow",
             scope: ["support.type.primitive"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -1889,28 +1889,28 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js template literals begin",
             scope: ["keyword.other.template.begin"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "js template literals end",
             scope: ["keyword.other.template.end"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "js template literals variable braces begin",
             scope: ["keyword.other.substitution.begin"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "js template literals variable braces end",
             scope: ["keyword.other.substitution.end"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
@@ -1927,14 +1927,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Go package name",
             scope: ["entity.name.package.go"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Go import statement",
             scope: "keyword.import.go",
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -1948,7 +1948,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "elm constant",
             scope: ["support.constant.elm"],
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -1979,7 +1979,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Clojure globals",
             scope: ["entity.global.clojure"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
@@ -2007,10 +2007,10 @@ export const getTokenColors = (context: ThemeContext) => {
             },
         },
         {
-            name: "Ini Default Text",
+            name: "Ini Default magnolia",
             scope: ["source.ini"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
 
@@ -2032,28 +2032,28 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Shell clauses",
             scope: ["meta.scope.case-clause-body.shell"],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "Shell funcs",
             scope: ["meta.scope.group.shell"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "Shell interpolated cmds",
             scope: ["string.interpolated.dollar.shell"],
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
             name: "Shell interpolated strings",
             scope: ["string.quoted.single.shell"],
             settings: {
-                foreground: palette.lavender,
+                foreground: palette.pink,
             },
         },
         {
@@ -2100,24 +2100,24 @@ export const getTokenColors = (context: ThemeContext) => {
             },
         },
         {
-            name: "Makefile text colour",
+            name: "Makefile magnolia colour",
             scope: ["source.makefile"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Groovy import names",
             scope: ["storage.modifier.import.groovy"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "Groovy Methods",
             scope: ["meta.method.groovy"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -2131,20 +2131,20 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Groovy Inheritance",
             scope: ["meta.definition.class.inherited.classes.groovy"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "HLSL Semantic",
             scope: ["support.variable.semantic.hlsl"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "HLSL Types",
             scope: [
-                "support.type.texture.hlsl",
+                "support.type.magnoliaure.hlsl",
                 "support.type.sampler.hlsl",
                 "support.type.object.hlsl",
                 "support.type.object.rw.hlsl",
@@ -2157,7 +2157,7 @@ export const getTokenColors = (context: ThemeContext) => {
         },
         {
             name: "SQL Variables",
-            scope: ["text.variable", "text.bracketed"],
+            scope: ["magnolia.variable", "magnolia.bracketed"],
             settings: {
                 foreground: palette.teal,
             },
@@ -2166,14 +2166,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "types",
             scope: ["support.type.swift", "support.type.vb.asp"],
             settings: {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         {
             name: "heading 1, keyword",
             scope: ["entity.name.function.xi"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
@@ -2208,42 +2208,42 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "heading 6, number",
             scope: ["invalid.xi"],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
             name: "string",
             scope: ["beginning.punctuation.definition.quote.markdown.xi"],
             settings: {
-                foreground: palette.green,
+                foreground: palette.medium_spring_green,
             },
         },
         {
             name: "comments",
             scope: ["beginning.punctuation.definition.list.markdown.xi"],
             settings: {
-                foreground: palette.overlay0,
+                foreground: palette.thistle,
             },
         },
         {
             name: "link",
             scope: ["constant.character.xi"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "accent",
             scope: ["accent.xi"],
             settings: {
-                foreground: palette.blue,
+                foreground: palette.medium_slate_blue,
             },
         },
         {
             name: "wikiword",
             scope: ["wikiword.xi"],
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
         },
         {
@@ -2257,15 +2257,15 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "elements to dim",
             scope: ["punctuation.definition.tag.xi"],
             settings: {
-                foreground: palette.overlay0,
+                foreground: palette.thistle,
             },
         },
         {
             name: "Markdown underscore-style headers",
             scope: [
                 "entity.name.label.cs",
-                "markup.heading.setext.1.markdown",
-                "markup.heading.setext.2.markdown",
+                "markup.heading.semagnolia.1.markdown",
+                "markup.heading.semagnolia.2.markdown",
             ],
             settings: {
                 foreground: palette.teal,
@@ -2275,7 +2275,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "meta.brace.square",
             scope: [" meta.brace.square"],
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -2283,21 +2283,21 @@ export const getTokenColors = (context: ThemeContext) => {
             scope: "comment, punctuation.definition.comment",
             settings: {
                 fontStyle: options.italicComments ? "italic" : "",
-                foreground: palette.overlay0,
+                foreground: palette.thistle,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Quote",
             scope: "markup.quote.markdown",
             settings: {
-                foreground: palette.overlay0,
+                foreground: palette.thistle,
             },
         },
         {
             name: "punctuation.definition.block.sequence.item.yaml",
             scope: "punctuation.definition.block.sequence.item.yaml",
             settings: {
-                foreground: palette.text,
+                foreground: palette.magnolia,
             },
         },
         {
@@ -2347,7 +2347,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "python storage type",
             scope: "storage.type.function.python",
             settings: {
-                foreground: palette.maroon,
+                foreground: palette.bittersweet,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -2362,7 +2362,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "invalid.deprecated.line-too-long.git-commit",
             scope: "invalid.deprecated.line-too-long.git-commit",
             settings: {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
                 fontStyle: "underline",
             },
         },

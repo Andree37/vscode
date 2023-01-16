@@ -1,19 +1,18 @@
 export type TbhThemeFlavour = "latte" | "frappe" | "macchiato" | "mocha";
 export type TbhThemeAccent =
-    | "rosewater"
+    | "brink_pink"
     | "flamingo"
     | "pink"
     | "mauve"
     | "red"
-    | "maroon"
-    | "peach"
-    | "yellow"
-    | "green"
+    | "bittersweet"
+    | "naples_yellow"
+    | "maximum_yellow_red"
+    | "medium_spring_green"
     | "teal"
     | "sky"
     | "sapphire"
-    | "blue"
-    | "lavender";
+    | "medium_slate_blue";
 export type TbhThemeWorkbenchMode = "default" | "flat";
 export type TbhThemeBracketMode =
     | "rainbow"
@@ -23,32 +22,31 @@ export type TbhThemeBracketMode =
 
 export interface TbhThemePalette {
     name: TbhThemeFlavour;
-    rosewater: string;
+    brink_pink: string;
     flamingo: string;
     pink: string;
     mauve: string;
     red: string;
-    maroon: string;
-    peach: string;
-    yellow: string;
-    green: string;
+    bittersweet: string;
+    naples_yellow: string;
+    maximum_yellow_red: string;
+    medium_spring_green: string;
     teal: string;
     sky: string;
     sapphire: string;
-    blue: string;
-    lavender: string;
-    text: string;
+    medium_slate_blue: string;
+    magnolia: string; // text
     subtext1: string;
     subtext0: string;
     overlay2: string;
     overlay1: string;
-    overlay0: string;
-    surface2: string;
+    thistle: string;
+    dim_gray: string; // surface2
     surface1: string;
     surface0: string;
-    base: string;
+    jet: string;
     mantle: string;
-    crust: string;
+    english_violet: string;
 }
 
 export type ColorOverrides = {
