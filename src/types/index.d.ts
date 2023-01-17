@@ -1,4 +1,4 @@
-export type TbhThemeFlavour = "latte" | "frappe" | "macchiato" | "mocha";
+export type TbhThemeFlavour = "dark";
 export type TbhThemeAccent =
     | "brink_pink"
     | "flamingo"
@@ -12,6 +12,7 @@ export type TbhThemeAccent =
     | "teal"
     | "sky"
     | "sapphire"
+    | "hot_pink"
     | "medium_slate_blue";
 export type TbhThemeWorkbenchMode = "default" | "flat";
 export type TbhThemeBracketMode =
@@ -21,6 +22,7 @@ export type TbhThemeBracketMode =
     | "neovim";
 
 export interface TbhThemePalette {
+    hot_pink: string;
     name: TbhThemeFlavour;
     brink_pink: string;
     flamingo: string;
@@ -51,18 +53,12 @@ export interface TbhThemePalette {
 
 export type ColorOverrides = {
     all?: Partial<TbhThemePalette>;
-    latte?: Partial<TbhThemePalette>;
-    frappe?: Partial<TbhThemePalette>;
-    macchiato?: Partial<TbhThemePalette>;
-    mocha?: Partial<TbhThemePalette>;
+    dark?: Partial<TbhThemePalette>;
 };
 
 export type CustomUIColors = {
     all?: Record<"all", string>;
-    latte?: Record<"latte", string>;
-    frappe?: Record<"frappe", string>;
-    macchiato?: Record<"macchiato", string>;
-    mocha?: Record<"mocha", string>;
+    dark?: Record<"dark", string>;
 };
 
 export type ThemeOptions = {
@@ -77,14 +73,11 @@ export type ThemeOptions = {
 };
 
 export type ThemePaths = {
-    latte: string;
-    frappe: string;
-    macchiato: string;
-    mocha: string;
+    dark: string;
 };
 
 export type ThemeContext = {
     palette: TbhThemePalette;
     options: ThemeOptions;
-    isLatte: boolean;
+    isLight: boolean;
 };

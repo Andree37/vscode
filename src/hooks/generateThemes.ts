@@ -6,12 +6,7 @@ import path = require("path");
 
 const paths = getThemePaths();
 
-const flavours = [
-    "latte" as TbhThemeFlavour,
-    "frappe" as TbhThemeFlavour,
-    "macchiato" as TbhThemeFlavour,
-    "mocha" as TbhThemeFlavour,
-];
+const flavours = ["dark" as TbhThemeFlavour];
 
 flavours.map((flavour) => {
     const theme = compileTheme(flavour, defaultOptions);

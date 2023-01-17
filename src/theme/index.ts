@@ -21,7 +21,7 @@ export const defaultOptions: ThemeOptions = {
 };
 
 export const compileTheme = (
-    flavour: TbhThemeFlavour = "mocha",
+    flavour: TbhThemeFlavour = "dark",
     options: ThemeOptions = defaultOptions
 ) => {
     const ctpPalette = Object.entries(variants[flavour])
@@ -42,24 +42,24 @@ export const compileTheme = (
     const context: ThemeContext = {
         palette,
         options,
-        isLatte: flavour === "latte",
+        isLight: flavour !== "dark",
     };
 
     const flavourName = `TbhTheme ${capitalize(flavour)}`;
 
     return {
         name: flavourName,
-        type: context.isLatte ? "light" : "dark",
+        type: context.isLight ? "light" : "dark",
         semanticHighlighting: true,
         semanticTokenColors: {
             enumMember: {
                 foreground: palette.sky,
             },
             "variable.constant": {
-                foreground: palette.yellow,
+                foreground: palette.maximum_yellow_red,
             },
             "variable.defaultLibrary": {
-                foreground: palette.peach,
+                foreground: palette.naples_yellow,
             },
         },
         tokenColors: getTokenColors(context),

@@ -8,16 +8,7 @@
         "all": {
             "$ref": "#/definitions/Overrides"
         },
-        "latte": {
-            "$ref": "#/definitions/Overrides"
-        },
-        "frappe": {
-            "$ref": "#/definitions/Overrides"
-        },
-        "macchiato": {
-            "$ref": "#/definitions/Overrides"
-        },
-        "mocha": {
+        "dark": {
             "$ref": "#/definitions/Overrides"
         }
     },
@@ -31,16 +22,16 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "base": {
+                "jet": {
                     "$ref": "#/definitions/HexColor"
                 },
                 "mantle": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "crust": {
+                "english_violet": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "overlay0": {
+                "thistle": {
                     "$ref": "#/definitions/HexColor"
                 },
                 "overlay1": {
@@ -55,7 +46,7 @@
                 "surface1": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "surface2": {
+                "dim_gray": {
                     "$ref": "#/definitions/HexColor"
                 },
                 "subtext0": {
@@ -64,10 +55,10 @@
                 "subtext1": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "text": {
+                "magnolia": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "rosewater": {
+                "brink_pink": {
                     "$ref": "#/definitions/HexColor"
                 },
                 "flamingo": {
@@ -82,16 +73,16 @@
                 "red": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "maroon": {
+                "bittersweet": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "peach": {
+                "naples_yellow": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "yellow": {
+                "maximum_yellow_red": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "green": {
+                "medium_spring_green": {
                     "$ref": "#/definitions/HexColor"
                 },
                 "teal": {
@@ -103,10 +94,10 @@
                 "sapphire": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "blue": {
+                "medium_slate_blue": {
                     "$ref": "#/definitions/HexColor"
                 },
-                "lavender": {
+                "hot_pink": {
                     "$ref": "#/definitions/HexColor"
                 }
             },

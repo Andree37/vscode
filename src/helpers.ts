@@ -2,12 +2,9 @@ import { join } from "path";
 import { ThemePaths } from "./types";
 
 export const getThemePaths = (): ThemePaths => {
-    const themes = ["latte", "frappe", "macchiato", "mocha"];
+    const themes = ["dark"];
     const paths: ThemePaths = {
-        latte: "",
-        frappe: "",
-        macchiato: "",
-        mocha: "",
+        dark: "",
     };
     themes.map(
         (theme) =>

@@ -28,24 +28,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "tbh-theme Mocha",
+                "label": "tbh-theme Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/mocha.json"
-            },
-            {
-                "label": "tbh-theme Macchiato",
-                "uiTheme": "vs-dark",
-                "path": "./themes/macchiato.json"
-            },
-            {
-                "label": "tbh-theme Frappé",
-                "uiTheme": "vs-dark",
-                "path": "./themes/frappe.json"
-            },
-            {
-                "label": "tbh-theme Latte",
-                "uiTheme": "vs",
-                "path": "./themes/latte.json"
+                "path": "./themes/dark.json"
             }
         ],
         "configuration": [
@@ -152,7 +137,7 @@
         "isPreReleaseVersion": false
     },
     "devDependencies": {
-        "@tbh-theme/palette": "^0.0.13",
+        "@tbh-theme/palette": "^0.0.17",
         "@types/node": "^16.0.0",
         "@types/vscode": "^1.70.0",
         "@typescript-eslint/eslint-plugin": "^5.34.0",
