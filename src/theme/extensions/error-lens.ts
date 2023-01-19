@@ -21,33 +21,21 @@ export default function colors(context: ThemeContext) {
         ),
         "errorLens.warningForeground": palette.naples_yellow,
         "errorLens.warningForegroundLight": palette.naples_yellow,
-        "errorLens.infoBackground": opacity(palette.medium_slate_blue, 0.15),
-        "errorLens.infoMessageBackground": opacity(
-            palette.medium_slate_blue,
-            0.15
-        ),
-        "errorLens.infoBackgroundLight": opacity(
-            palette.medium_slate_blue,
-            0.15
-        ),
-        "errorLens.infoForeground": palette.medium_slate_blue,
-        "errorLens.infoForegroundLight": palette.medium_slate_blue,
-        "errorLens.hintBackground": opacity(palette.medium_spring_green, 0.15),
-        "errorLens.hintMessageBackground": opacity(
-            palette.medium_spring_green,
-            0.15
-        ),
-        "errorLens.hintBackgroundLight": opacity(
-            palette.medium_spring_green,
-            0.15
-        ),
-        "errorLens.hintForeground": palette.medium_spring_green,
-        "errorLens.hintForegroundLight": palette.medium_spring_green,
+        "errorLens.infoBackground": opacity(palette.heliotrope, 0.15),
+        "errorLens.infoMessageBackground": opacity(palette.heliotrope, 0.15),
+        "errorLens.infoBackgroundLight": opacity(palette.heliotrope, 0.15),
+        "errorLens.infoForeground": palette.heliotrope,
+        "errorLens.infoForegroundLight": palette.heliotrope,
+        "errorLens.hintBackground": opacity(palette.emerald, 0.15),
+        "errorLens.hintMessageBackground": opacity(palette.emerald, 0.15),
+        "errorLens.hintBackgroundLight": opacity(palette.emerald, 0.15),
+        "errorLens.hintForeground": palette.emerald,
+        "errorLens.hintForegroundLight": palette.emerald,
         "errorLens.statusBarIconErrorForeground": palette.red,
         "errorLens.statusBarIconWarningForeground": palette.naples_yellow,
         "errorLens.statusBarErrorForeground": palette.red,
         "errorLens.statusBarWarningForeground": palette.naples_yellow,
-        "errorLens.statusBarInfoForeground": palette.medium_slate_blue,
-        "errorLens.statusBarHintForeground": palette.medium_spring_green,
+        "errorLens.statusBarInfoForeground": palette.heliotrope,
+        "errorLens.statusBarHintForeground": palette.emerald,
     };
 }

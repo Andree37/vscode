@@ -1,7 +1,7 @@
 import { ThemeContext } from "../types";
 
-export const getTokenColors = (conmagnolia: ThemeContext) => {
-    const { palette, options } = conmagnolia;
+export const getTokenColors = (context: ThemeContext) => {
+    const { palette, options } = context;
 
     return [
         {
@@ -15,7 +15,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "All function",
             scope: ["entity.name.function", "support.function"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -42,7 +42,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "All types",
             scope: "entity.name.type",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -140,14 +140,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "source.json meta.structure.array.json > value.json > string.quoted.json > punctuation",
             ],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "JSON property name",
             scope: "support.type.property-name.json.comments",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -232,14 +232,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "haskell storage type",
             scope: "storage.type.haskell",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "support.variable.magic.python",
             scope: "support.variable.magic.python",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -251,7 +251,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "punctuation.parenthesis.end.python",
             ],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -266,28 +266,28 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Rust modifier",
             scope: "storage.modifier.lifetime.rust",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "Rust types",
             scope: "entity.name.type.rust",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "Rust functions std",
             scope: "support.function.std.rust",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
             name: "Rust functions",
             scope: "entity.name.function.rust",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -377,7 +377,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Rust constants",
             scope: "support.constant.core.rust",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -391,7 +391,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Rust variable",
             scope: ["variable.language.rust", "variable.other.rust"],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -399,7 +399,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Rust misc operators",
             scope: "keyword.operator.misc.rust",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -457,7 +457,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "C++ Variables",
             scope: "variable.other.local.cpp",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -573,14 +573,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "punctuation.section.parameters.end.bracket.round.c",
             ],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "C++ storage type modifier",
             scope: "storage.type.built-in.primitive.cpp",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -612,21 +612,21 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "regexp operator.quantifier",
             scope: "keyword.operator.quantifier.regexp",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "punctuation.definition",
             scope: "punctuation.definition.string.begin,punctuation.definition.string.end",
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "Comment Markup Link",
             scope: "comment markup.link",
             settings: {
-                foreground: palette.thistle,
+                foreground: palette.overlay0,
             },
         },
         {
@@ -645,14 +645,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "punctuation.definition.to-file.diff",
             ],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
             name: "inserted.diff",
             scope: "markup.inserted.diff",
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
@@ -674,7 +674,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "markup.fenced_code.block",
             ],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
                 fontStyle: options.italicComments ? "italic" : "",
             },
         },
@@ -682,14 +682,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "js/ts punctuation separator key-value",
             scope: "punctuation.separator.key-value",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "js/ts import keyword",
             scope: "keyword.operator.expression.import",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -703,14 +703,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "math property js/ts",
             scope: "support.constant.property.math",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "js/ts variable.other.constant",
             scope: "variable.other.constant",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -756,14 +756,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "meta.method.body.java",
             ],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "java modifier.import",
             scope: "meta.method.java",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -784,7 +784,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "java variable.name",
             scope: "meta.definition.variable.name.java",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -816,7 +816,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "support.constant.property-value.css",
             ],
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -837,21 +837,21 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "support.constant.color.w3c-standard-color-name.scss",
             ],
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "css comma",
             scope: "punctuation.separator.list.comma.css",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "css attribute-name.id",
             scope: "support.constant.color.w3c-standard-color-name.css",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -889,14 +889,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "support.variable.object.node",
             ],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "js/ts json",
             scope: "support.constant.json",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -923,14 +923,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "js/ts support.variable.property.process",
             scope: "support.variable.property.process",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "js console function",
             scope: "entity.name.function,support.function.console",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -989,7 +989,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Punctuation",
             scope: "punctuation.separator.delimiter",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1033,14 +1033,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "punctuation.definition.list.end.python",
             ],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "python function-call.generic",
             scope: "meta.function-call.generic.python",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -1048,7 +1048,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "python placeholder reset to normal string",
             scope: "constant.character.format.placeholder.other.python",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -1084,7 +1084,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Java Variables",
             scope: "token.variable.parameter.java",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1105,7 +1105,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Packages",
             scope: "token.package",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1117,7 +1117,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "variable.function",
             ],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -1178,14 +1178,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Control Elements",
             scope: "control.elements, keyword.operator.less",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "Methods",
             scope: "keyword.other.special-method",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1235,35 +1235,35 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Support type",
             scope: "support.type.property-name",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "Support type",
             scope: "support.constant.property-value",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "Support type",
             scope: "support.constant.font-name",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "Meta tag",
             scope: "meta.tag",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "Strings",
             scope: "string",
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
@@ -1291,14 +1291,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Constants",
             scope: "constant",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "Constants",
             scope: "punctuation.definition.constant",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -1312,7 +1312,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Attributes",
             scope: "entity.other.attribute-name",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1320,7 +1320,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             scope: "entity.other.attribute-name.id",
             settings: {
                 fontStyle: "",
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1328,7 +1328,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             scope: "entity.other.attribute-name.class.css",
             settings: {
                 fontStyle: "",
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -1356,7 +1356,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Headings",
             scope: "markup.heading punctuation.definition.heading, entity.name.section",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1370,7 +1370,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Bold",
             scope: "markup.bold,todo.bold",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -1419,28 +1419,28 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "[VSCODE-CUSTOM] Markdown heading semagnolia",
             scope: "markup.heading.semagnolia",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Punctuation Definition Bold",
             scope: "punctuation.definition.bold.markdown",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Inline Raw",
             scope: "markup.inline.raw.markdown",
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Inline Raw",
             scope: "markup.inline.raw.string.markdown",
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
@@ -1486,7 +1486,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "[VSCODE-CUSTOM] Markdown Link Title/Description",
             scope: "string.other.link.title.markdown,string.other.link.description.markdown",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1521,7 +1521,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "illegal, deprecated",
             scope: "invalid.illegal, invalid.deprecated",
             settings: {
-                foreground: palette.thistle,
+                foreground: palette.overlay0,
                 fontStyle: "strikethrough",
             },
         },
@@ -1529,7 +1529,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "illegal",
             scope: "invalid.illegal.bad-ampersand.html",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1548,14 +1548,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
         },
         {
             name: "laravel blade tag",
-            scope: "magnolia.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
+            scope: "text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade",
             settings: {
                 foreground: palette.red,
             },
         },
         {
             name: "laravel blade @",
-            scope: "magnolia.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
+            scope: "text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade",
             settings: {
                 foreground: palette.red,
             },
@@ -1591,14 +1591,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "style double quoted array index normal begin",
             scope: "punctuation.section.array.begin.php",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "style double quoted array index normal end",
             scope: "punctuation.section.array.end.php",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1624,7 +1624,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "php call-function",
             scope: "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1652,7 +1652,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "punctuation.definition.section.switch-block.end.bracket.curly.php",
             ],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1664,14 +1664,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
                 "support.constant.parser-token.php",
             ],
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "php goto",
             scope: "entity.name.goto-label.php,support.other.php",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1706,7 +1706,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "python function decorator @",
             scope: "meta.function.decorator.python",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1723,21 +1723,21 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "parameter function js/ts",
             scope: "function.parameter",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "brace function",
             scope: "function.brace",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "parameter function ruby cs",
             scope: ["function.parameter.ruby", "function.parameter.cs"],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1758,14 +1758,14 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "rgb value",
             scope: "inline-color-decoration rgb-value",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
             name: "rgb value less",
             scope: "less rgb-value",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -1791,7 +1791,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "block scope",
             scope: "block.scope.end,block.scope.begin",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1805,19 +1805,19 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "cs local variable",
             scope: "entity.name.variable.local.cs",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             scope: "token.info-token",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
             scope: "token.warn-token",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -1847,7 +1847,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Reset JavaScript string interpolation expression",
             scope: ["meta.template.expression"],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -1861,7 +1861,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "js Flowtype",
             scope: ["support.type.type.flowtype"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1889,28 +1889,28 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "js template literals begin",
             scope: ["keyword.other.template.begin"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "js template literals end",
             scope: ["keyword.other.template.end"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "js template literals variable braces begin",
             scope: ["keyword.other.substitution.begin"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "js template literals variable braces end",
             scope: ["keyword.other.substitution.end"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
@@ -1934,7 +1934,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Go import statement",
             scope: "keyword.import.go",
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -1948,7 +1948,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "elm constant",
             scope: ["support.constant.elm"],
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -2007,10 +2007,10 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             },
         },
         {
-            name: "Ini Default magnolia",
+            name: "Ini Default text",
             scope: ["source.ini"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
 
@@ -2032,21 +2032,21 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Shell clauses",
             scope: ["meta.scope.case-clause-body.shell"],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "Shell funcs",
             scope: ["meta.scope.group.shell"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
             name: "Shell interpolated cmds",
             scope: ["string.interpolated.dollar.shell"],
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -2100,7 +2100,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             },
         },
         {
-            name: "Makefile magnolia colour",
+            name: "Makefile text colour",
             scope: ["source.makefile"],
             settings: {
                 foreground: palette.naples_yellow,
@@ -2117,7 +2117,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Groovy Methods",
             scope: ["meta.method.groovy"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -2131,7 +2131,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "Groovy Inheritance",
             scope: ["meta.definition.class.inherited.classes.groovy"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
@@ -2157,7 +2157,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
         },
         {
             name: "SQL Variables",
-            scope: ["magnolia.variable", "magnolia.bracketed"],
+            scope: ["text.variable", "text.bracketed"],
             settings: {
                 foreground: palette.teal,
             },
@@ -2173,7 +2173,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "heading 1, keyword",
             scope: ["entity.name.function.xi"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
@@ -2208,42 +2208,42 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "heading 6, number",
             scope: ["invalid.xi"],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
             name: "string",
             scope: ["beginning.punctuation.definition.quote.markdown.xi"],
             settings: {
-                foreground: palette.medium_spring_green,
+                foreground: palette.emerald,
             },
         },
         {
             name: "comments",
             scope: ["beginning.punctuation.definition.list.markdown.xi"],
             settings: {
-                foreground: palette.thistle,
+                foreground: palette.overlay0,
             },
         },
         {
             name: "link",
             scope: ["constant.character.xi"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
             name: "accent",
             scope: ["accent.xi"],
             settings: {
-                foreground: palette.medium_slate_blue,
+                foreground: palette.heliotrope,
             },
         },
         {
             name: "wikiword",
             scope: ["wikiword.xi"],
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
         },
         {
@@ -2257,7 +2257,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "elements to dim",
             scope: ["punctuation.definition.tag.xi"],
             settings: {
-                foreground: palette.thistle,
+                foreground: palette.overlay0,
             },
         },
         {
@@ -2275,7 +2275,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "meta.brace.square",
             scope: [" meta.brace.square"],
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -2283,21 +2283,21 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             scope: "comment, punctuation.definition.comment",
             settings: {
                 fontStyle: options.italicComments ? "italic" : "",
-                foreground: palette.thistle,
+                foreground: palette.overlay0,
             },
         },
         {
             name: "[VSCODE-CUSTOM] Markdown Quote",
             scope: "markup.quote.markdown",
             settings: {
-                foreground: palette.thistle,
+                foreground: palette.overlay0,
             },
         },
         {
             name: "punctuation.definition.block.sequence.item.yaml",
             scope: "punctuation.definition.block.sequence.item.yaml",
             settings: {
-                foreground: palette.magnolia,
+                foreground: palette.text,
             },
         },
         {
@@ -2362,7 +2362,7 @@ export const getTokenColors = (conmagnolia: ThemeContext) => {
             name: "invalid.deprecated.line-too-long.git-commit",
             scope: "invalid.deprecated.line-too-long.git-commit",
             settings: {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
                 fontStyle: "underline",
             },
         },

@@ -56,7 +56,7 @@ export const compileTheme = (
                 foreground: palette.sky,
             },
             "variable.constant": {
-                foreground: palette.maximum_yellow_red,
+                foreground: palette.yellow_red,
             },
             "variable.defaultLibrary": {
                 foreground: palette.naples_yellow,
