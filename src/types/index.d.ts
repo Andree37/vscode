@@ -11,7 +11,7 @@ export type TbhThemeAccent =
     | "teal"
     | "sky"
     | "sapphire"
-    | "heliotrope"
+    | "cornflower_blue"
     | "pink";
 export type TbhThemeWorkbenchMode = "default" | "flat";
 export type TbhThemeBracketMode =
@@ -33,7 +33,7 @@ export interface TbhThemePalette {
     teal: string;
     sky: string;
     sapphire: string;
-    heliotrope: string;
+    cornflower_blue: string;
     pink: string;
     text: string; // text
     subtext1: string;

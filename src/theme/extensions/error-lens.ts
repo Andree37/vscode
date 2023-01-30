@@ -21,11 +21,14 @@ export default function colors(context: ThemeContext) {
         ),
         "errorLens.warningForeground": palette.naples_yellow,
         "errorLens.warningForegroundLight": palette.naples_yellow,
-        "errorLens.infoBackground": opacity(palette.heliotrope, 0.15),
-        "errorLens.infoMessageBackground": opacity(palette.heliotrope, 0.15),
-        "errorLens.infoBackgroundLight": opacity(palette.heliotrope, 0.15),
-        "errorLens.infoForeground": palette.heliotrope,
-        "errorLens.infoForegroundLight": palette.heliotrope,
+        "errorLens.infoBackground": opacity(palette.cornflower_blue, 0.15),
+        "errorLens.infoMessageBackground": opacity(
+            palette.cornflower_blue,
+            0.15
+        ),
+        "errorLens.infoBackgroundLight": opacity(palette.cornflower_blue, 0.15),
+        "errorLens.infoForeground": palette.cornflower_blue,
+        "errorLens.infoForegroundLight": palette.cornflower_blue,
         "errorLens.hintBackground": opacity(palette.emerald, 0.15),
         "errorLens.hintMessageBackground": opacity(palette.emerald, 0.15),
         "errorLens.hintBackgroundLight": opacity(palette.emerald, 0.15),
@@ -35,7 +38,7 @@ export default function colors(context: ThemeContext) {
         "errorLens.statusBarIconWarningForeground": palette.naples_yellow,
         "errorLens.statusBarErrorForeground": palette.red,
         "errorLens.statusBarWarningForeground": palette.naples_yellow,
-        "errorLens.statusBarInfoForeground": palette.heliotrope,
+        "errorLens.statusBarInfoForeground": palette.cornflower_blue,
         "errorLens.statusBarHintForeground": palette.emerald,
     };
 }

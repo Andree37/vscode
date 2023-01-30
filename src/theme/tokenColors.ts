@@ -15,7 +15,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All function",
             scope: ["entity.name.function", "support.function"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -42,7 +42,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "All types",
             scope: "entity.name.type",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -147,7 +147,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "JSON property name",
             scope: "support.type.property-name.json.comments",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -280,14 +280,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Rust functions std",
             scope: "support.function.std.rust",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
             name: "Rust functions",
             scope: "entity.name.function.rust",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -645,7 +645,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "punctuation.definition.to-file.diff",
             ],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -689,7 +689,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js/ts import keyword",
             scope: "keyword.operator.expression.import",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -763,7 +763,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "java modifier.import",
             scope: "meta.method.java",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -930,7 +930,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js console function",
             scope: "entity.name.function,support.function.console",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1040,7 +1040,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "python function-call.generic",
             scope: "meta.function-call.generic.python",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -1117,7 +1117,7 @@ export const getTokenColors = (context: ThemeContext) => {
                 "variable.function",
             ],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
                 fontStyle: options.italicKeywords ? "italic" : "",
             },
         },
@@ -1185,7 +1185,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Methods",
             scope: "keyword.other.special-method",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1312,7 +1312,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Attributes",
             scope: "entity.other.attribute-name",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1320,7 +1320,7 @@ export const getTokenColors = (context: ThemeContext) => {
             scope: "entity.other.attribute-name.id",
             settings: {
                 fontStyle: "",
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1356,7 +1356,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Headings",
             scope: "markup.heading punctuation.definition.heading, entity.name.section",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1486,7 +1486,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "[VSCODE-CUSTOM] Markdown Link Title/Description",
             scope: "string.other.link.title.markdown,string.other.link.description.markdown",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1624,7 +1624,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "php call-function",
             scope: "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1671,7 +1671,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "php goto",
             scope: "entity.name.goto-label.php,support.other.php",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1706,7 +1706,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "python function decorator @",
             scope: "meta.function.decorator.python",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1811,7 +1811,7 @@ export const getTokenColors = (context: ThemeContext) => {
         {
             scope: "token.info-token",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1861,7 +1861,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "js Flowtype",
             scope: ["support.type.type.flowtype"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -1934,7 +1934,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Go import statement",
             scope: "keyword.import.go",
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -2039,7 +2039,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Shell funcs",
             scope: ["meta.scope.group.shell"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -2117,7 +2117,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "Groovy Methods",
             scope: ["meta.method.groovy"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -2173,7 +2173,7 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "heading 1, keyword",
             scope: ["entity.name.function.xi"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
@@ -2229,14 +2229,14 @@ export const getTokenColors = (context: ThemeContext) => {
             name: "link",
             scope: ["constant.character.xi"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
             name: "accent",
             scope: ["accent.xi"],
             settings: {
-                foreground: palette.heliotrope,
+                foreground: palette.cornflower_blue,
             },
         },
         {
